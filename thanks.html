@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waiting...</title>
-    <link rel="icon"
-    href="https://rewards.paal.ai/android-icon-192x192.png">
+    <title>QR Code Page</title>
     <style>
         body {
     margin: 0;
@@ -36,15 +34,15 @@
     display: inline-block;
     padding: 15px 30px;
     font-size: 14px;
-    background-color: #234AAF;
-    color: #fff;
+    background-color: #00d4b5;
+    color: #1c1c1c;
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .home-button:hover {
-    background-color: #234AAF;
+    background-color: #00bfa0;
 }
 
     </style>
@@ -52,29 +50,7 @@
 <body>
     <div class="container">
         <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://kaswere.xyz&size=200x200" alt="QR Code" class="qr-code">
-        <p>Please contact the admin with your unique code <span style="font-size: 20px; font-weight: 600;" id="randomCode">
-        </span></p>
-        <a href="./index.html" class="home-button">Return Home</a>
+        <a href="index.html" class="home-button">Return Home</a>
     </div>
-
-    p>
-
-    <script>
-        // Function to generate a random code
-        function generateRandomCode(length) {
-            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            let result = '';
-            for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * characters.length);
-                result += characters[randomIndex];
-            }
-            return result;
-        }
-
-        // Generate and display the code
-        const code = generateRandomCode(8); // Adjust length as needed
-        document.getElementById('randomCode').textContent = code;
-    </script>
-
 </body>
 </html>
