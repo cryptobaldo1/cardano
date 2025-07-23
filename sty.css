@@ -1,0 +1,134 @@
+<div class="wallet-modal">
+  <div class="wallet-content">
+    <div class="modal-header">
+        <h2>Connect Wallet</h2>
+        <span class="close-btn">&times;</span>
+    </div>
+    <p>Choose your Preferred Wallet:</p>
+    <div class="wallet-list">
+        <button class="wallet-button"><img src="./imgs/imgs01.png"> Nami Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs02.png">  Eternl Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs03.png"> Gero Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs04.png"> Flint Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs05.png"> Typhon Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs06.png"> Ellipal Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs07.png"> AdaLite Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs08.png"> Infinito Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs09.png"> Atomic Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs10.png"> Guarda Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs11.png"> NuFi Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs12.png"> Vespr Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs13.png"> Lace Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs14.png"> Yoroi Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs15.png"> Daedalus Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs16.png"> Fetch Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs17.png"> Cosmostation Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs18.png"> Keplr Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs19.png"> Metamask Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs20.png"> Ledger Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs21.png"> Trezor Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs22.png"> WalletConnect <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs23.jpeg"> Centralized Exchange Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs24.png"> Binance Smart Chain Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs25.png"> MyEther Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs26.png"> Trust Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs27.png"> Safepal Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs28.jpeg"> KeepKey Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs29.png"> Exodus Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs30.png"> Polygon Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs31.png"> Xumm App Wallet <i class="fa-solid fa-angle-right"></i></button>
+        <button class="wallet-button"><img src="./imgs/imgs30.png"> Other Wallets <i class="fa-solid fa-angle-right"></i></button>
+    </div>
+</div>
+</div>
+<style>
+
+  .wallet-modal {
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 20000; 
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+.wallet-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-height: 80vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 15vh;
+    left: 30%;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    border: 1px solid #ddd;
+}
+
+.wallet-button::-webkit-scrollbar {
+display: none; 
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wallet-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.wallet-button {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 15px 25px;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wallet-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.wallet-button:hover {
+    background: #444;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+@media  screen and (max-width: 600px) {
+    .wallet-content {
+        width: 80%;
+        left: 10%;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .wallet-list {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

